@@ -125,7 +125,7 @@ Initially, the the listview widget will be hidden and only the button will be vi
 # Acknowledgments
 - This app was created as an assignment exercise to demonstrate how to fetch and display data from an API using Flutter. It follows best practices for code 
   organization and styling.
-- Special thanks to Ubbari for giving me such a wonderful app through which i got the opportunity to learn dart and the flutter development.
+- Special thanks to Ubarri for giving me such a wonderful app through which i got the opportunity to learn dart and the flutter development.
 - Also, thanks to the Flutter community and the creators of the libraries used in this project for making Flutter app development more efficient and enjoyable.
 
 # Support or Contact
