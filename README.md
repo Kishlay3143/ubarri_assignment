@@ -38,6 +38,63 @@ Initially, the the listview widget will be hidden and only the button will be vi
 - Dart Programming Language
 - http Package for API requests
 
+# Explanation of the code
+- The purpose of this project is to demonstrate how to build a Flutter app that fetches data from an external API, in this case, the reqres.in API. The code is 
+  organized into different files and folders to follow best practices for code organization and maintainability.
+- Folder and File Structure
+  lib/
+  |- api/
+  |    |- api_service.dart
+  |
+  |- models/
+  |    |- user_model.dart
+  |
+  |- screens/
+  |    |- home_page.dart
+  |
+  |- widgets/
+  |    |- custom_button.dart
+  |
+  |- main.dart
+ 
+
+ ***** Purpose of Each File and Folder****** : -
+1. `api` Folder :
+- The api folder contains code related to making API requests and handling data retrieval from external sources. This folder contains a file name "api_service.dart"
+- api_service.dart: This file defines functions and classes responsible for making API requests. It uses the http package for network requests and the dart:convert 
+   package for parsing JSON responses.
+  
+2. `models Folder` :
+- The models folder is used for defining the data models or classes that represent the structure of the data fetched from the API. This folde conatains a fle named
+  "user_model.dart".
+- user_model.dart: This file defines a User class that represents the structure of user data. It typically includes properties like id, email, first_name, 
+  last_name, and avatar. These properties help organize and work with the data retrieved from the API.
+
+3. `screens Folder` :
+- The screens folder contains different screens or pages of your Flutter app. This folder contains a file named "home_page".
+- `home_page.dart` : This file represents the main screen of your app. It fetches data from the API and displays it.
+       `_fetchDataFromApi()`: This function sends an HTTP GET request to the API endpoint, retrieves user data, and updates the listResponse.
+       `_buildListView()`: This function returns a ListView.builder widget for displaying the list of users fetched from the API.
+       `_buildListItem(Map<String, dynamic> responseData)`: This function returns a Card widget that displays user information, including name, email, and an 
+        avatar or icon.
+4. `widgets Folder` :
+- The widgets folder typically contains reusable UI components or widgets that can be used across different screens of your app. This folder contains a file named
+  `custom_button.dart`.
+- custom_button.dart: This file defines a custom button widget, enhancing code reusability and maintaining a consistent UI design.
+
+5. `main.dart` :
+- The main.dart file serves as the entry point of your Flutter app. It initializes your app and specifies the first screen to display.
+- main(): The main function is the app's entry point. It calls runApp to start your app and specifies the MyApp widget as the root widget.
+- MyApp class: The MyApp class is a stateless widget representing your entire app. In the build method, it creates a MaterialApp widget that sets up the app's 
+  basic structure, including the navigation bar and theme.
+
+***** SUMMARY ********
+- The api folder contains code for making API requests.
+- The models folder defines the structure of the data fetched from the API.
+- The screens folder contains the UI and logic for the main screen of the app.
+- The widgets folder houses reusable UI components.
+- The main.dart file is the entry point and sets up the basic app structure.
+
 # Acknowledgments
 - This app was created as an assignment exercise to demonstrate how to fetch and display data from an API using Flutter. It follows best practices for code 
   organization and styling.
