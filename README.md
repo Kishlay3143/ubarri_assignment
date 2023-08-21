@@ -41,7 +41,7 @@ Initially, the the listview widget will be hidden and only the button will be vi
 # Explanation of the code
 - The purpose of this project is to demonstrate how to build a Flutter app that fetches data from an external API, in this case, the reqres.in API. The code is 
   organized into different files and folders to follow best practices for code organization and maintainability.
-- Folder and File Structure
+- Folder and File Structure:  
   lib/
   |- api/
   |    |- api_service.dart
@@ -87,6 +87,33 @@ Initially, the the listview widget will be hidden and only the button will be vi
 - main(): The main function is the app's entry point. It calls runApp to start your app and specifies the MyApp widget as the root widget.
 - MyApp class: The MyApp class is a stateless widget representing your entire app. In the build method, it creates a MaterialApp widget that sets up the app's 
   basic structure, including the navigation bar and theme.
+
+***** LOGIC and decision-making processes used while creating this app *******
+1. API Request Logic :
+- Purpose: This logic is responsible for making an API request to fetch user data.
+- Implementation:
+  * A GET request is sent to the API endpoint using the http package.
+  * The response status code is checked. If it's 200 (HTTP OK), the data is parsed from JSON format and stored in the listResponse variable.
+ -Decision Points:
+  * The response status code is checked to ensure a successful request.
+  * If the request is successful, data is parsed and stored; otherwise, an error is handled.
+2. Toggling List Visibility:
+- Purpose: This logic determines whether the list of users should be visible or hidden. 
+- Implementation:
+  * The isListViewVisible variable keeps track of the visibility state.
+  * Pressing the "Show List" button toggles the visibility by updating this variable.
+- Decision Points:
+  * The button's text and the visibility of the list are controlled by the value of isListViewVisible.
+  * If isListViewVisible is true, the list is shown; if false, it's hidden.
+ 
+3. Building the User List:
+ - Purpose: These methods build and customize the UI for displaying user data.
+ - Implementation:
+   * _buildListView() returns a ListView.builder widget that dynamically generates user list items.
+   * _buildListItem() returns a Card widget containing user information.
+- Decision Points:
+   * The ListView.builder allows for efficient rendering of a large number of items.
+   * _buildListItem() customizes each list item with user data.
 
 ***** SUMMARY ********
 - The api folder contains code for making API requests.
