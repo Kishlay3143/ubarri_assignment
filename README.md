@@ -6,10 +6,14 @@ Initially the the listview will be hidden and only the button will be visible. A
 
 # Screenshots
 * Initial state of the app with a hidden list.
+![Hidden List](https://github.com/Kishlay3143/ubbari_assignment/assets/92507922/a0c8e6bd-5c9c-4414-98eb-7d1787caf427)
 
 * The app displaying the fetched user data in a list after clicking on the button. (Mobile View)
+![Visible List](https://github.com/Kishlay3143/ubbari_assignment/assets/92507922/6ca163b0-f914-489b-b08f-f8dc70eeaf14)
 
 * The app displaying the fetched user data in a list after clicking on the button. (Web View) 
+![Visible List (Web)](https://github.com/Kishlay3143/ubbari_assignment/assets/92507922/1b98001d-8464-4f27-80ae-628b0e0bffa7)
+
 
 # Features
 - Fetches user data from the API endpoint.
