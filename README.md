@@ -2,10 +2,10 @@
 
 # Overview
 The Fetch Data From API is a simple Flutter application designed to demonstrate how to fetch data from an API and display it in a list format. The app fetches user's data from the reqres.in API and displays it in a listview. 
-Initially the the listview will be hidden and only the button will be visible. After clicking on the button, the data from the api will be fetched and will be shown inside a listview.
+Initially, the the listview widget will be hidden and only the button will be visible to the user. After clicking on the button, the data from the api will be fetched and the the data will be shown to the user inside a listview widget.
 
 # Screenshots
-* Initial state of the app with a hidden list.
+* Initial state of the app with a hidden list.(Mobile View)
 ![Hidden List](https://github.com/Kishlay3143/ubbari_assignment/assets/92507922/a0c8e6bd-5c9c-4414-98eb-7d1787caf427)
 
 * The app displaying the fetched user data in a list after clicking on the button. (Mobile View)
@@ -39,7 +39,8 @@ Initially the the listview will be hidden and only the button will be visible. A
 - http Package for API requests
 
 # Acknowledgments
-- This app was created as a assignment exercise to demonstrate how to fetch and display data from an API using Flutter. It follows best practices for code organization and styling.
+- This app was created as an assignment exercise to demonstrate how to fetch and display data from an API using Flutter. It follows best practices for code 
+  organization and styling.
 - Special thanks to Ubbari for giving me such a wonderful app through which i got the opportunity to learn dart and the flutter development.
 - Also, thanks to the Flutter community and the creators of the libraries used in this project for making Flutter app development more efficient and enjoyable.
 
